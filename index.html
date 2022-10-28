@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rental Estimator</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-   <h1>Acme Car Rental</h1> 
+    <main>
+        <h1>ACME Car Rental</h1>
+        <form>
+
+            <div id="row" class="container">
+                <label for="date">Pickup date:</label> <input type="date" name="PickUpDate" id="date"> <br> <br>
+                <label for="numbersOfDate">Number of days:</label> <input type="text" name="numbersOfDate"
+                    id="numbersOfDate"> <br> <br>
+                <p>Options</p>
+                <input type="checkbox" name="electronicTollTag" id="electronicTollTag"> <label
+                    for="electronicTollTag">Electronic Toll Tag
+                    ($3.95/day)</label>
+                <br>
+                <input type="checkbox" name="gps" id="gps"><label for="gps"> GPS ($2.95/day)</label> <br>
+                <input type="checkbox" name="roadsideAsistance" id="roadsideAsistance"> <label
+                    for="roadsideAsistance">Roadside Asistance ($2.95/day)</label>
+
+            </div>
+            <br>
+            <div id="row2" class="container2">
+                <p>Under 25</p>
+                <input type="radio" name="radio" id="yes" value="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" name="radio" id="no" value="no">
+                <label for="no">No</label>
+            </div>
+            <br>
+            <div id="row3" class="container3">
+                <input type="button" value="Estimate Total Cost  " class="totalbtn"> <br>
+                <br>
+                <p>Car rental: <output></output></p>
+                <p> Options: <output></output> </p>
+                <p> Under 25 surcharge: <output></output></p>
+
+                <p>Total due: <output></output></p>
+
+
+            </div>
+
+
+
+
+
+
+        </form>
+    </main>
 </body>
+
 </html>
