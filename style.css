@@ -1,0 +1,52 @@
+html {
+  background-image: url(https://images.pexels.com/photos/38570/lamborghini-car-speed-prestige-38570.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-size: cover;
+}
+
+h1 {
+  color: aliceblue;
+  text-align: left;
+}
+
+label {
+  color: aliceblue;
+}
+
+p {
+  color: aliceblue;
+}
+
+.totalbtn:hover {
+  background-color: rgb(177, 132, 17);
+  position: relative;
+}
+
+.totalbtn {
+  margin: 5px 0 0 0;
+  width: 50%;
+  height: 30px;
+  color: rgb(238, 226, 226);
+  font-size: px;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.438);
+  border-radius: 8px;
+  background: rgba(105, 105, 105, 0);
+  margin-top: 0px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+main {
+  text-align: center;
+}
