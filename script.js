@@ -47,11 +47,15 @@ function carRental() {
   // let totalDue = document.getElementById("totalDue").value;
   // totalDue.innerHTML = (surcharge + options + carRental);
   // console.log(totalDue);
-}
 
-function total(){
-  let totalDue = document.getElementById("totalDue").value;
-  totalDue.innerHTML = (surcharge + options + carRental);
-  console.log(totalDue);
+
+// function total(){
+//   let totalDue = document.getElementById("totalDue").value;
+//   totalDue.innerHTML = (surcharge + options + carRental);
+//   console.log(totalDue);
+// }
+// total()
+
+let totalDue = document.getElementById("totalDue");
+totalDue.innerHTML = (parseInt(surcharge.value) + parseInt(options.value) + parseInt(carRental.value)).toFixed(2);
 }
-total()
