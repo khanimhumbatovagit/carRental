@@ -34,28 +34,32 @@ function carRental() {
 
   //--------Under 25---------//
   let yesNo = document.querySelector("input[name='radio']:checked");
-  let surcharge = document.getElementById("surcharge")
-  
+  let surcharge = document.getElementById("surcharge");
+
   if (yesNo.value == "yes") {
-     surcharge.innerHTML = (numbersDays * 29.99) * 30 / 100;
-     console.log(yesNo.value);
-  } else if (yesNo.value == "no"){
+    surcharge.innerHTML = (numbersDays * 29.99 * 30) / 100;
+    console.log(yesNo.value);
+  } else if (yesNo.value == "no") {
     surcharge.innerHTML = 0;
   }
 
   //------Total Due ----------//
-  // let totalDue = document.getElementById("totalDue").value;
-  // totalDue.innerHTML = (surcharge + options + carRental);
-  // console.log(totalDue);
+  //  let totalDue = document.getElementById("totalDue").value;
+  //  totalDue.innerHTML = (surcharge + options + carRental);
+  //  console.log(totalDue);
 
+  // function total(){
+  //   let totalDue = document.getElementById("totalDue").value;
+  //   totalDue.innerHTML = (surcharge + options + carRental);
+  //   console.log(totalDue);
+  // }
+  // total()
 
-// function total(){
-//   let totalDue = document.getElementById("totalDue").value;
-//   totalDue.innerHTML = (surcharge + options + carRental);
-//   console.log(totalDue);
-// }
-// total()
-
-let totalDue = document.getElementById("totalDue");
-totalDue.innerHTML = (parseInt(surcharge.value) + parseInt(options.value) + parseInt(carRental.value)).toFixed(2);
+  let totalDue = document.getElementById("totalDue");
+  totalDue.innerHTML = (
+    parseInt(surcharge.value) +
+    parseInt(options.value) +
+    parseInt(carRental.value)
+  ).toFixed(2);
 }
+
